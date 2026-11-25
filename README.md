@@ -2,9 +2,25 @@
 
 一座装进口袋的复古掌机博物馆：把游戏库当作一排展柜陈列，每次游玩留下的存档变成可回溯的时间轴。
 
-> **项目状态：已停止维护，仅作存档开源。**
-> 本项目曾提交 App Store 审核，因 Guideline 4.3(a)（Spam）被拒，作者决定放弃上架。
-> 代码按原样保留，供学习 iOS 模拟器前端、UIKit 设计系统与 C/C++ 桥接层参考。
+> ### 存档状态
+>
+> 本项目已停止开发，**不再接受功能请求或 PR**，代码按原样保留。
+>
+> 它曾以「掌机时光机 / Pocket Museum」提交 App Store 审核，因 Guideline 4.3(a)（Spam）
+> 被拒——Apple 认为这个多平台模拟器与商店里已有的同类 App 差异不足。重做界面、
+> 更名、补原创功能都试过，判定没有改变，于是放弃上架，转为开源存档。
+>
+> 如果你只是想把代码读一读，这三处最值得看：
+>
+> - [`RetroEmu/Design/RetroDesignSystem.swift`](RetroEmu/Design/RetroDesignSystem.swift)
+>   —— 全手写的 UIKit 设计系统（1246 行），调色、字阶、卡片、胶囊、浮动岛 Tab Bar
+> - [`RetroEmu/Core/Bridge/`](RetroEmu/Core/Bridge/)
+>   —— 十个模拟核心的 Objective-C++ 桥接层，以及各核心缺失符号的桩实现
+> - [`Tools/testrom/build_demo_rom.py`](Tools/testrom/build_demo_rom.py)
+>   —— 自己写的 6502 汇编器，用来生成内置那张 NES 卡带
+>
+> **提醒：本项目构建产物不能商业分发**，原因见
+> [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 
 ## 这是什么
 
