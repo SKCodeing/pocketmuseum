@@ -1,0 +1,3 @@
+CFBundleDisplayName = "掌机时光机";
+NSLocalNetworkUsageDescription = "需要访问局域网，用于在设备之间无线传输游戏文件。";
+NSPhotoLibraryAddUsageDescription = "需要访问相册，用于把游戏截图保存到你的相册中。";

@@ -1,0 +1,28 @@
+# 本地构建与巡检产物
+.tmp/
+
+# Python 工具链缓存
+__pycache__/
+*.pyc
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+
+# 第三方模拟器源码与预编译库：本地构建依赖，体积数百 MB，不入库
+/libs/
+/ppsspp/
+/Gambatte/
+/GenesisPlus/
+/Nestopia/
+/SMSPlus/
+/Snes9x/
+/mGBA/
+/melonDS/
+/mupen64plus-core/
+/pcsx_rearmed/
+
+# PPSSPP 构建脚本副产物（会被同步组当资源打进 App）
+/RetroEmu/Core/ios.toolchain.cmake
+/RetroEmu/Core/setup_xcode.md

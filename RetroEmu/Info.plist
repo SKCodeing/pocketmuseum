@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_retroemu._tcp</string>
+		<string>_http._tcp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>$(NSLocalNetworkUsageDescription)</string>
+	<!-- F2: 截图保存到相册 -->
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要访问相册，用于把游戏截图保存到你的相册中。</string>
+	<!-- F12/F13: Spotlight 和 Widget deep link URL scheme -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.retroemu.deeplink</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>retroemu</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<!-- 声明支持打开的文件类型，使 App 出现在系统"用其他应用打开"菜单中 -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>ROM File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.retroemu.rom.nes</string>
+				<string>com.retroemu.rom.gb</string>
+				<string>com.retroemu.rom.gbc</string>
+				<string>com.retroemu.rom.gg</string>
+				<string>com.retroemu.rom.sms</string>
+				<string>com.retroemu.rom.md</string>
+				<string>com.retroemu.rom.gba</string>
+				<string>com.retroemu.rom.snes</string>
+				<string>com.retroemu.rom.nds</string>
+				<string>com.retroemu.rom.32x</string>
+				<string>com.retroemu.rom.n64</string>
+				<string>com.retroemu.rom.ps1</string>
+				<string>com.retroemu.rom.psp</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>ZIP Archive</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>public.zip-archive</string>
+			</array>
+		</dict>
+	</array>
+	<!-- 声明自定义 UTI，让系统识别各扩展名 -->
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.nes</string>
+			<key>UTTypeDescription</key>
+			<string>NES ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>nes</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.gb</string>
+			<key>UTTypeDescription</key>
+			<string>Game Boy ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>gb</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.gbc</string>
+			<key>UTTypeDescription</key>
+			<string>Game Boy Color ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>gbc</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.gg</string>
+			<key>UTTypeDescription</key>
+			<string>Game Gear ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>gg</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.sms</string>
+			<key>UTTypeDescription</key>
+			<string>Sega Master System ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>sms</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.md</string>
+			<key>UTTypeDescription</key>
+			<string>Mega Drive ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>md</string><string>bin</string><string>gen</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.gba</string>
+			<key>UTTypeDescription</key>
+			<string>Game Boy Advance ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>gba</string></array>
+			</dict>
+		</dict>
+		<!-- Sprint 2: SNES -->
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.snes</string>
+			<key>UTTypeDescription</key>
+			<string>Super Nintendo ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>sfc</string><string>smc</string></array>
+			</dict>
+		</dict>
+		<!-- Sprint 2: NDS -->
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.retroemu.rom.nds</string>
+			<key>UTTypeDescription</key>
+			<string>Nintendo DS ROM</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>nds</string></array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,3 @@
+CFBundleDisplayName = "Pocket Museum";
+NSLocalNetworkUsageDescription = "Local network access is used to transfer game files wirelessly between devices.";
+NSPhotoLibraryAddUsageDescription = "Photo library access is used to save game screenshots to your library.";

@@ -1,0 +1,1193 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A111FF2F83F31000A70E31 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A111FE2F83F31000A70E31 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A1117C2F83F31200A70E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A1115D2F83F31000A70E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A111642F83F31000A70E31;
+			remoteInfo = RetroEmu;
+		};
+		18A111862F83F31200A70E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A1115D2F83F31000A70E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A111642F83F31000A70E31;
+			remoteInfo = RetroEmu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A111652F83F31000A70E31 /* RetroEmu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroEmu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A1117B2F83F31200A70E31 /* RetroEmuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroEmuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A111852F83F31200A70E31 /* RetroEmuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroEmuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A111FE2F83F31000A70E31 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AA000011CAFE00010000BEEF /* libPPSSPPCore-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPPSSPPCore-arm64.a"; path = "libs/ppsspp/libPPSSPPCore-arm64.a"; sourceTree = SOURCE_ROOT; };
+		AA000012CAFE00010000BEEF /* libsnes9x-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsnes9x-arm64.a"; path = "libs/snes9x/libsnes9x-arm64.a"; sourceTree = SOURCE_ROOT; };
+		AA000013CAFE00010000BEEF /* libmelonDS-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmelonDS-arm64.a"; path = "libs/melonds/libmelonDS-arm64.a"; sourceTree = SOURCE_ROOT; };
+		AA000014CAFE00010000BEEF /* libmupen64plus-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmupen64plus-arm64.a"; path = "libs/mupen64plus/libmupen64plus-arm64.a"; sourceTree = SOURCE_ROOT; };
+		AA000015CAFE00010000BEEF /* libpcsx-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpcsx-arm64.a"; path = "libs/pcsx/libpcsx-arm64.a"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18A1118D2F83F31200A70E31 /* Exceptions for "RetroEmu" folder in "RetroEmu" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/build_genesis.sh,
+				Core/build_melonds.sh,
+				Core/build_mgba.sh,
+				Core/build_mupen64plus.sh,
+				Core/build_nestopia.sh,
+				Core/build_pcsx.sh,
+				Core/build_ppsspp.sh,
+				Core/build_snes9x.sh,
+				Core/core/NstSoundRenderer.inl,
+				Core/core/NstVideoFilterHq2x.inl,
+				Core/core/NstVideoFilterHq3x.inl,
+				Core/core/NstVideoFilterHq4x.inl,
+				"Core/ios-sim.toolchain.cmake",
+				Core/ios.toolchain.cmake,
+				Core/setup_xcode.md,
+				Info.plist,
+			);
+			target = 18A111642F83F31000A70E31 /* RetroEmu */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18A111672F83F31000A70E31 /* RetroEmu */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18A1118D2F83F31200A70E31 /* Exceptions for "RetroEmu" folder in "RetroEmu" target */,
+			);
+			path = RetroEmu;
+			sourceTree = "<group>";
+		};
+		18A1117E2F83F31200A70E31 /* RetroEmuTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RetroEmuTests;
+			sourceTree = "<group>";
+		};
+		18A111882F83F31200A70E31 /* RetroEmuUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RetroEmuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A111622F83F31000A70E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A111FF2F83F31000A70E31 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111782F83F31200A70E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111822F83F31200A70E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A1115C2F83F31000A70E31 = {
+			isa = PBXGroup;
+			children = (
+				18A111672F83F31000A70E31 /* RetroEmu */,
+				18A1117E2F83F31200A70E31 /* RetroEmuTests */,
+				18A111882F83F31200A70E31 /* RetroEmuUITests */,
+				18A111662F83F31000A70E31 /* Products */,
+				18A111FE2F83F31000A70E31 /* libz.tbd */,
+				AA000011CAFE00010000BEEF /* libPPSSPPCore-arm64.a */,
+				AA000012CAFE00010000BEEF /* libsnes9x-arm64.a */,
+				AA000013CAFE00010000BEEF /* libmelonDS-arm64.a */,
+				AA000014CAFE00010000BEEF /* libmupen64plus-arm64.a */,
+				AA000015CAFE00010000BEEF /* libpcsx-arm64.a */,
+			);
+			sourceTree = "<group>";
+		};
+		18A111662F83F31000A70E31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A111652F83F31000A70E31 /* RetroEmu.app */,
+				18A1117B2F83F31200A70E31 /* RetroEmuTests.xctest */,
+				18A111852F83F31200A70E31 /* RetroEmuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A111642F83F31000A70E31 /* RetroEmu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A1118E2F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmu" */;
+			buildPhases = (
+				A1B2C3D52F84051B00E72148 /* Build mGBA */,
+				A1B2C3D42F84051B00E72148 /* Build Genesis-Plus-GX */,
+				18A111612F83F31000A70E31 /* Sources */,
+				18A111622F83F31000A70E31 /* Frameworks */,
+				18A111632F83F31000A70E31 /* Resources */,
+				180C2EAA2F84051B00E72148 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				18A111672F83F31000A70E31 /* RetroEmu */,
+			);
+			name = RetroEmu;
+			packageProductDependencies = (
+			);
+			productName = RetroEmu;
+			productReference = 18A111652F83F31000A70E31 /* RetroEmu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A1117A2F83F31200A70E31 /* RetroEmuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A111932F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmuTests" */;
+			buildPhases = (
+				18A111772F83F31200A70E31 /* Sources */,
+				18A111782F83F31200A70E31 /* Frameworks */,
+				18A111792F83F31200A70E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A1117D2F83F31200A70E31 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18A1117E2F83F31200A70E31 /* RetroEmuTests */,
+			);
+			name = RetroEmuTests;
+			packageProductDependencies = (
+			);
+			productName = RetroEmuTests;
+			productReference = 18A1117B2F83F31200A70E31 /* RetroEmuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18A111842F83F31200A70E31 /* RetroEmuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A111962F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmuUITests" */;
+			buildPhases = (
+				18A111812F83F31200A70E31 /* Sources */,
+				18A111822F83F31200A70E31 /* Frameworks */,
+				18A111832F83F31200A70E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A111872F83F31200A70E31 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				18A111882F83F31200A70E31 /* RetroEmuUITests */,
+			);
+			name = RetroEmuUITests;
+			packageProductDependencies = (
+			);
+			productName = RetroEmuUITests;
+			productReference = 18A111852F83F31200A70E31 /* RetroEmuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A1115D2F83F31000A70E31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					18A111642F83F31000A70E31 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					18A1117A2F83F31200A70E31 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 18A111642F83F31000A70E31;
+					};
+					18A111842F83F31200A70E31 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 18A111642F83F31000A70E31;
+					};
+				};
+			};
+			buildConfigurationList = 18A111602F83F31000A70E31 /* Build configuration list for PBXProject "RetroEmu" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 18A1115C2F83F31000A70E31;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 18A111662F83F31000A70E31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A111642F83F31000A70E31 /* RetroEmu */,
+				18A1117A2F83F31200A70E31 /* RetroEmuTests */,
+				18A111842F83F31200A70E31 /* RetroEmuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A111632F83F31000A70E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111792F83F31200A70E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111832F83F31200A70E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		180C2EAA2F84051B00E72148 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/RetroEmu/Core/build_nestopia.sh\n";
+		};
+		A1B2C3D42F84051B00E72148 /* Build Genesis-Plus-GX */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Genesis-Plus-GX";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/libgenesis.a",
+				"$(BUILT_PRODUCTS_DIR)/libmgba.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/RetroEmu/Core/build_genesis.sh\n";
+		};
+		A1B2C3D52F84051B00E72148 /* Build mGBA */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build mGBA";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/RetroEmu/Core/build_mgba.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A111612F83F31000A70E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111772F83F31200A70E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A111812F83F31200A70E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A1117D2F83F31200A70E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A111642F83F31000A70E31 /* RetroEmu */;
+			targetProxy = 18A1117C2F83F31200A70E31 /* PBXContainerItemProxy */;
+		};
+		18A111872F83F31200A70E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A111642F83F31000A70E31 /* RetroEmu */;
+			targetProxy = 18A111862F83F31200A70E31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18A1118F2F83F31200A70E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = RetroEmu/RetroEmu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261121;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = (
+					SNESBridge.mm,
+					SNESStubs.cpp,
+					SNESBapuStubs.cpp,
+					SNESJMALib.cpp,
+					SNESUnzipStubs.c,
+					NDSBridge.mm,
+					N64Bridge.mm,
+					MupenMissingFiles.c,
+					PS1Bridge.mm,
+					PS1Stubs.cpp,
+					PCXSMissingFiles.c,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Gambatte/libgambatte/libretro-common/include",
+					"$(SRCROOT)/mGBA/include",
+					"$(SRCROOT)/mGBA/src",
+					"$(SRCROOT)/Snes9x",
+					"$(SRCROOT)/Snes9x/apu",
+					"$(SRCROOT)/Snes9x/apu/bapu/dsp",
+					"$(SRCROOT)/Snes9x/unzip",
+					"$(SRCROOT)/melonDS/src",
+					"$(SRCROOT)/mupen64plus-core/src/api",
+					"$(SRCROOT)/pcsx_rearmed",
+					"$(SRCROOT)/pcsx_rearmed/include",
+					"$(SRCROOT)/pcsx_rearmed/libpcsxcore",
+					"$(SRCROOT)/ppsspp",
+					"$(SRCROOT)/ppsspp/Core",
+					"$(SRCROOT)/ppsspp/Common",
+					"$(SRCROOT)/ppsspp/ext/glslang",
+					"$(SRCROOT)/ppsspp/ext/libzip",
+					"$(SRCROOT)/ppsspp/ext/zstd/lib",
+					"$(SRCROOT)/ppsspp/ext",
+					"$(SRCROOT)/ppsspp/libs/ppsspp/build-arm64",
+				);
+				INFOPLIST_FILE = RetroEmu/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问局域网，用于在设备之间无线传输游戏文件。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-narrowing",
+					"-Wno-shorten-64-to-32",
+					"-Wno-deprecated-declarations",
+					"-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR",
+					"-D__LIBRETRO__",
+					"-DENABLE_VFS",
+					"-DCOLOR_32_BIT",
+					"-DMINIMAL_CORE=2",
+					"-DDISABLE_THREADING",
+					"-DHAVE_STDINT_H",
+					"-DUNZIP_SUPPORT",
+					"-DMOBILE_DEVICE",
+					"-DLUA_USE_IOS",
+					"-DPPSSPP_PLATFORM_IOS_APP_STORE=1",
+				);
+				"OTHER_CPLUSPLUSFLAGS[sdk=iphonesimulator*]" = (
+					"-Wno-narrowing",
+					"-Wno-shorten-64-to-32",
+					"-Wno-deprecated-declarations",
+					"-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR",
+					"-D__LIBRETRO__",
+					"-DENABLE_VFS",
+					"-DCOLOR_32_BIT",
+					"-DMINIMAL_CORE=2",
+					"-DDISABLE_THREADING",
+					"-DHAVE_STDINT_H",
+					"-DUNZIP_SUPPORT",
+					"-DMOBILE_DEVICE",
+					"-DLUA_USE_IOS",
+				);
+				OTHER_LDFLAGS = (
+					"$(BUILT_PRODUCTS_DIR)/libgenesis.a",
+					"$(BUILT_PRODUCTS_DIR)/libmgba.a",
+					"$(SRCROOT)/libs/ppsspp/libPPSSPPCore-arm64.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libCommon.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libCore.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libnative.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libat3_standalone.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libcityhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libgason.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblibzstd_static.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libminiupnpc.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libspirv-cross-core.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libspirv-cross-glsl.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libglslang.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libGenericCodeGen.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libMachineIndependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libOGLCompiler.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libOSDependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libSPIRV.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libarmips.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblua.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libkirk.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libsnappy.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libxxhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libsfmt19937.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/librcheevos.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libchdr.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblibzip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libpng17.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libxbrz.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libvma.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libbasis_universal.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libnaett.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libminimp3.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libpugixml.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/lib7zip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libcpu_features.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libudis86.a",
+					"$(SRCROOT)/libs/snes9x/libsnes9x-arm64.a",
+					"$(SRCROOT)/libs/melonds/libmelonDS-arm64.a",
+					"$(SRCROOT)/libs/melonds/build-arm64/src/teakra/src/libteakra.a",
+					"$(SRCROOT)/libs/mupen64plus/libmupen64plus-arm64.a",
+					"$(SRCROOT)/libs/pcsx/libpcsx-arm64.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavcodec.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavformat.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavutil.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libswresample.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libswscale.a",
+					"$(SRCROOT)/ppsspp/ios/MoltenVK/MoltenVK.xcframework/ios-arm64/libMoltenVK.a",
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					IOSurface,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"$(BUILT_PRODUCTS_DIR)/libgenesis.a",
+					"$(BUILT_PRODUCTS_DIR)/libmgba.a",
+					"$(SRCROOT)/libs/ppsspp/libPPSSPPCore-arm64-sim.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libCommon.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libCore.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libnative.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libimgui.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libat3_standalone.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libcityhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libgason.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblibzstd_static.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libminiupnpc.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libspirv-cross-core.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libspirv-cross-glsl.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libglslang.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libGenericCodeGen.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libMachineIndependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libOGLCompiler.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libOSDependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libSPIRV.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libarmips.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblua.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libkirk.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libsnappy.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libxxhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libsfmt19937.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/librcheevos.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libchdr.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblibzip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libpng17.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libxbrz.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libvma.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libbasis_universal.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libminimp3.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libpugixml.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/lib7zip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libcpu_features.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libudis86.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavcodec.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavformat.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavutil.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libswresample.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libswscale.a",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreServices,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					MediaPlayer,
+					"-framework",
+					Photos,
+					"-framework",
+					PhotosUI,
+					"-framework",
+					GLKit,
+					"-framework",
+					OpenAL,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					IOSurface,
+				);
+				OTHER_SWIFT_FLAGS = "-D RETRO_NATIVE_CORE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RetroEmu/Core/Bridge/RetroEmu-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/RetroEmu/Core/Bridge",
+					"$(SRCROOT)/GenesisPlus/core",
+					"$(SRCROOT)/GenesisPlus/core/sound",
+					"$(SRCROOT)/GenesisPlus/core/ntsc",
+					"$(SRCROOT)/GenesisPlus/core/z80",
+					"$(SRCROOT)/GenesisPlus/core/m68k",
+					"$(SRCROOT)/GenesisPlus/core/input_hw",
+					"$(SRCROOT)/GenesisPlus/core/cart_hw",
+					"$(SRCROOT)/GenesisPlus/core/cart_hw/svp",
+					"$(SRCROOT)/GenesisPlus/core/cd_hw",
+					"$(SRCROOT)/Nestopia/source/core/**",
+					"$(SRCROOT)/Gambatte/libgambatte/include",
+					"$(SRCROOT)/Gambatte/libgambatte/libretro",
+					"$(SRCROOT)/Gambatte/libgambatte/libretro-common/include",
+					"$(SRCROOT)/Gambatte/common",
+					"$(SRCROOT)/mGBA/include",
+					"$(SRCROOT)/Snes9x",
+					"$(SRCROOT)/Snes9x/apu",
+					"$(SRCROOT)/Snes9x/apu/bapu/dsp",
+					"$(SRCROOT)/Snes9x/unzip",
+					"$(SRCROOT)/melonDS/src",
+					"$(SRCROOT)/mupen64plus-core/src/api",
+					"$(SRCROOT)/pcsx_rearmed",
+					"$(SRCROOT)/pcsx_rearmed/include",
+					"$(SRCROOT)/pcsx_rearmed/libpcsxcore",
+					"$(SRCROOT)/ppsspp",
+					"$(SRCROOT)/ppsspp/Core",
+					"$(SRCROOT)/ppsspp/Common",
+					"$(SRCROOT)/ppsspp/ext/glslang",
+					"$(SRCROOT)/ppsspp/ext/libzip",
+					"$(SRCROOT)/ppsspp/ext/zstd/lib",
+					"$(SRCROOT)/ppsspp/ext",
+					"$(SRCROOT)/libs/ppsspp/build-arm64",
+				);
+			};
+			name = Debug;
+		};
+		18A111902F83F31200A70E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = RetroEmu/RetroEmu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20261121;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = (
+					SNESBridge.mm,
+					SNESStubs.cpp,
+					SNESBapuStubs.cpp,
+					SNESJMALib.cpp,
+					SNESUnzipStubs.c,
+					NDSBridge.mm,
+					N64Bridge.mm,
+					MupenMissingFiles.c,
+					PS1Bridge.mm,
+					PS1Stubs.cpp,
+					PCXSMissingFiles.c,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Gambatte/libgambatte/libretro-common/include",
+					"$(SRCROOT)/mGBA/include",
+					"$(SRCROOT)/mGBA/src",
+					"$(SRCROOT)/Snes9x",
+					"$(SRCROOT)/Snes9x/apu",
+					"$(SRCROOT)/Snes9x/unzip",
+					"$(SRCROOT)/melonDS/src",
+					"$(SRCROOT)/mupen64plus-core/src/api",
+					"$(SRCROOT)/pcsx_rearmed",
+					"$(SRCROOT)/pcsx_rearmed/include",
+					"$(SRCROOT)/pcsx_rearmed/libpcsxcore",
+					"$(SRCROOT)/ppsspp",
+					"$(SRCROOT)/ppsspp/Core",
+					"$(SRCROOT)/ppsspp/Common",
+					"$(SRCROOT)/ppsspp/ext/glslang",
+					"$(SRCROOT)/ppsspp/ext/libzip",
+					"$(SRCROOT)/ppsspp/ext/zstd/lib",
+					"$(SRCROOT)/ppsspp/ext",
+					"$(SRCROOT)/libs/ppsspp/build-arm64",
+				);
+				INFOPLIST_FILE = RetroEmu/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问局域网，用于在设备之间无线传输游戏文件。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wno-narrowing",
+					"-Wno-shorten-64-to-32",
+					"-Wno-deprecated-declarations",
+					"-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR",
+					"-D__LIBRETRO__",
+					"-DENABLE_VFS",
+					"-DCOLOR_32_BIT",
+					"-DMINIMAL_CORE=2",
+					"-DDISABLE_THREADING",
+					"-DHAVE_STDINT_H",
+					"-DUNZIP_SUPPORT",
+					"-DMOBILE_DEVICE",
+					"-DLUA_USE_IOS",
+					"-DPPSSPP_PLATFORM_IOS_APP_STORE=1",
+				);
+				"OTHER_CPLUSPLUSFLAGS[sdk=iphonesimulator*]" = (
+					"-Wno-narrowing",
+					"-Wno-shorten-64-to-32",
+					"-Wno-deprecated-declarations",
+					"-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR",
+					"-D__LIBRETRO__",
+					"-DENABLE_VFS",
+					"-DCOLOR_32_BIT",
+					"-DMINIMAL_CORE=2",
+					"-DDISABLE_THREADING",
+					"-DHAVE_STDINT_H",
+					"-DUNZIP_SUPPORT",
+					"-DMOBILE_DEVICE",
+					"-DLUA_USE_IOS",
+				);
+				OTHER_LDFLAGS = (
+					"$(BUILT_PRODUCTS_DIR)/libgenesis.a",
+					"$(BUILT_PRODUCTS_DIR)/libmgba.a",
+					"$(SRCROOT)/libs/ppsspp/libPPSSPPCore-arm64.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libCommon.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libCore.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libnative.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libat3_standalone.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libcityhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libgason.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblibzstd_static.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libminiupnpc.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libspirv-cross-core.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libspirv-cross-glsl.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libglslang.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libGenericCodeGen.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libMachineIndependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libOGLCompiler.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libOSDependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libSPIRV.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libarmips.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblua.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libkirk.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libsnappy.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libxxhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libsfmt19937.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/librcheevos.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libchdr.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/liblibzip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libpng17.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libxbrz.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libvma.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libbasis_universal.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libnaett.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libminimp3.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libpugixml.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/lib7zip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libcpu_features.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64/lib/libudis86.a",
+					"$(SRCROOT)/libs/snes9x/libsnes9x-arm64.a",
+					"$(SRCROOT)/libs/melonds/libmelonDS-arm64.a",
+					"$(SRCROOT)/libs/melonds/build-arm64/src/teakra/src/libteakra.a",
+					"$(SRCROOT)/libs/mupen64plus/libmupen64plus-arm64.a",
+					"$(SRCROOT)/libs/pcsx/libpcsx-arm64.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavcodec.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavformat.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libavutil.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libswresample.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/universal/lib/libswscale.a",
+					"$(SRCROOT)/ppsspp/ios/MoltenVK/MoltenVK.xcframework/ios-arm64/libMoltenVK.a",
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					IOSurface,
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"$(BUILT_PRODUCTS_DIR)/libgenesis.a",
+					"$(BUILT_PRODUCTS_DIR)/libmgba.a",
+					"$(SRCROOT)/libs/ppsspp/libPPSSPPCore-arm64-sim.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libCommon.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libCore.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libnative.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libimgui.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libat3_standalone.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libcityhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libgason.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblibzstd_static.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libminiupnpc.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libspirv-cross-core.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libspirv-cross-glsl.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libglslang.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libGenericCodeGen.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libMachineIndependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libOGLCompiler.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libOSDependent.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libSPIRV.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libarmips.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblua.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libkirk.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libsnappy.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libxxhash.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libsfmt19937.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/librcheevos.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libchdr.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/liblibzip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libpng17.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libxbrz.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libvma.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libbasis_universal.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libminimp3.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libpugixml.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/lib7zip.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libcpu_features.a",
+					"$(SRCROOT)/libs/ppsspp/build-arm64-sim/lib/libudis86.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavcodec.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavformat.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libavutil.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libswresample.a",
+					"$(SRCROOT)/ppsspp/ffmpeg/ios/arm64-sim/lib/libswscale.a",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreServices,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					MediaPlayer,
+					"-framework",
+					Photos,
+					"-framework",
+					PhotosUI,
+					"-framework",
+					GLKit,
+					"-framework",
+					OpenAL,
+					"-framework",
+					Metal,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					IOSurface,
+				);
+				OTHER_SWIFT_FLAGS = "-D RETRO_NATIVE_CORE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RetroEmu/Core/Bridge/RetroEmu-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/RetroEmu/Core/Bridge",
+					"$(SRCROOT)/GenesisPlus/core",
+					"$(SRCROOT)/GenesisPlus/core/sound",
+					"$(SRCROOT)/GenesisPlus/core/ntsc",
+					"$(SRCROOT)/GenesisPlus/core/z80",
+					"$(SRCROOT)/GenesisPlus/core/m68k",
+					"$(SRCROOT)/GenesisPlus/core/input_hw",
+					"$(SRCROOT)/GenesisPlus/core/cart_hw",
+					"$(SRCROOT)/GenesisPlus/core/cart_hw/svp",
+					"$(SRCROOT)/GenesisPlus/core/cd_hw",
+					"$(SRCROOT)/Nestopia/source/core/**",
+					"$(SRCROOT)/Gambatte/libgambatte/include",
+					"$(SRCROOT)/Gambatte/libgambatte/libretro",
+					"$(SRCROOT)/Gambatte/libgambatte/libretro-common/include",
+					"$(SRCROOT)/Gambatte/common",
+					"$(SRCROOT)/mGBA/include",
+					"$(SRCROOT)/Snes9x",
+					"$(SRCROOT)/Snes9x/apu",
+					"$(SRCROOT)/Snes9x/unzip",
+					"$(SRCROOT)/melonDS/src",
+					"$(SRCROOT)/mupen64plus-core/src/api",
+					"$(SRCROOT)/pcsx_rearmed",
+					"$(SRCROOT)/pcsx_rearmed/include",
+					"$(SRCROOT)/pcsx_rearmed/libpcsxcore",
+					"$(SRCROOT)/ppsspp",
+					"$(SRCROOT)/ppsspp/Core",
+					"$(SRCROOT)/ppsspp/Common",
+					"$(SRCROOT)/ppsspp/ext/glslang",
+					"$(SRCROOT)/ppsspp/ext/libzip",
+					"$(SRCROOT)/ppsspp/ext/zstd/lib",
+					"$(SRCROOT)/ppsspp/ext",
+					"$(SRCROOT)/libs/ppsspp/build-arm64",
+				);
+			};
+			name = Release;
+		};
+		18A111912F83F31200A70E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18A111922F83F31200A70E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A111942F83F31200A70E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroEmu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroEmu";
+			};
+			name = Debug;
+		};
+		18A111952F83F31200A70E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroEmu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroEmu";
+			};
+			name = Release;
+		};
+		18A111972F83F31200A70E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroEmu;
+			};
+			name = Debug;
+		};
+		18A111982F83F31200A70E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RetroEmuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroEmu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A111602F83F31000A70E31 /* Build configuration list for PBXProject "RetroEmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A111912F83F31200A70E31 /* Debug */,
+				18A111922F83F31200A70E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A1118E2F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A1118F2F83F31200A70E31 /* Debug */,
+				18A111902F83F31200A70E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A111932F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A111942F83F31200A70E31 /* Debug */,
+				18A111952F83F31200A70E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A111962F83F31200A70E31 /* Build configuration list for PBXNativeTarget "RetroEmuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A111972F83F31200A70E31 /* Debug */,
+				18A111982F83F31200A70E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A1115D2F83F31000A70E31 /* Project object */;
+}
